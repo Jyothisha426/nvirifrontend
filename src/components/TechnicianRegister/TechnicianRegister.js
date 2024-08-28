@@ -25,7 +25,7 @@ function TechnicianRegister() {
 
         if (Object.keys(formErrors).length === 0) {
             try {
-                const response = await fetch('http://localhost:5000/register/technician', {
+                const response = await fetch('https://nviribackend.onrender.com/register/technician', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, password, name: businessName }),

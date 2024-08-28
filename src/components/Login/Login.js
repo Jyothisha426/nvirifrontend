@@ -13,7 +13,7 @@ function Login() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/login/user', {
+            const response = await fetch('https://nviribackend.onrender.com/login/user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),

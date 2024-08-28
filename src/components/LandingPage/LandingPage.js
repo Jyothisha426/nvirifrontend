@@ -8,15 +8,15 @@ function App() {
     const [technicians, setTechnicians] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/locations')
+        fetch('https://nviribackend.onrender.com/locations')
             .then(response => response.json())
             .then(data => setLocations(data));
 
-        fetch('http://localhost:5000/appliance-types')
+        fetch('https://nviribackend.onrender.com/appliance-types')
             .then(response => response.json())
             .then(data => setApplianceTypes(data));
 
-        fetch('http://localhost:5000/technicians')
+        fetch('https://nviribackend.onrender.com/technicians')
             .then(response => response.json())
             .then(data => setTechnicians(data));
     }, []);

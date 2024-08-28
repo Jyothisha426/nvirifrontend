@@ -24,7 +24,7 @@ function UserRegister() {
 
         if (Object.keys(formErrors).length === 0) {
             try {
-                const response = await fetch('http://localhost:5000/register/user', {
+                const response = await fetch('https://nviribackend.onrender.com/register/user', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, password }),
